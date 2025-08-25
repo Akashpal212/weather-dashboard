@@ -8,8 +8,8 @@ export const GET = async (req) => {
       return NextResponse.json({ message: "City is required" }, { status: 400 });
     }
 
-    const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
-    const base = process.env.NEXT_PUBLIC_OPENWEATHER_BASE_URL || "https://api.openweathermap.org/data/2.5";
+    const apiKey = process.env.OPENWEATHER_API_KEY;
+    const base = process.env.OPENWEATHER_BASE_URL || "https://api.openweathermap.org/data/2.5";
 
     const url = `${base}/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}`;
 
