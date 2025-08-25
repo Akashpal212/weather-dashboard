@@ -14,11 +14,6 @@ Built with **HTML, CSS, JavaScript, and Next.js** as part of the frontend develo
 
 ---
 
-## 📸 Screenshots
-(Add screenshots here, e.g., `public/demo.png`)
-
----
-
 ## 🛠 Tech Stack
 - **Next.js (App Router)**
 - **HTML, CSS, JavaScript (ES6+)**
@@ -26,9 +21,25 @@ Built with **HTML, CSS, JavaScript, and Next.js** as part of the frontend develo
 
 ---
 
+```markdown
 ## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+1. Clone the repository
 ```bash
 git clone https://github.com/Akashpal212/weather-dashboard.git
 cd weather-dashboard
+
+2. Install dependencies
+npm install
+
+3. Setup environment variables
+Create a `.env.local` file in the root directory with the following:
+OPENWEATHER_API_KEY=your_api_key_here
+OPENWEATHER_BASE_URL=https://api.openweathermap.org/data/2.5
+
+You can get a free API key from: https://openweathermap.org/api
+
+4. Run the development server
+npm run dev
+
+Open http://localhost:3000 in your browser
